@@ -28,13 +28,13 @@
 		BED3CAB420543936007968FF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3CAB320543936007968FF /* SettingsViewController.swift */; };
 		BED3CAB72054405A007968FF /* Think different.txt in Resources */ = {isa = PBXBuildFile; fileRef = BED3CAB62054405A007968FF /* Think different.txt */; };
 		BED3CABF20544197007968FF /* Textor_UI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3CABE20544197007968FF /* Textor_UI_Tests.swift */; };
-		BED3CAC7205441A1007968FF /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3CAC6205441A0007968FF /* SnapshotHelper.swift */; };
 		BED6707D201BB1B200D04AD5 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6707C201BB1B200D04AD5 /* KeyboardObserver.swift */; };
 		BEDDAB152058745300AC9396 /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDAB142058745300AC9396 /* Notification+Name.swift */; };
 		BEDDAB1720587C1700AC9396 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDAB1620587C1700AC9396 /* UserDefaultsController.swift */; };
 		BEDDAB192058811F00AC9396 /* Bundle+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDAB182058811F00AC9396 /* Bundle+Info.swift */; };
 		BEDDAB1B2058813800AC9396 /* UIDevice+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDDAB1A2058813800AC9396 /* UIDevice+Name.swift */; };
 		BEFE545020697B1000FEFE93 /* FontPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFE544F20697B1000FEFE93 /* FontPickerViewController.swift */; };
+		EFA563C32497A6EF008CEEED /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3CAC6205441A0007968FF /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -399,7 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED3CABF20544197007968FF /* Textor_UI_Tests.swift in Sources */,
-				BED3CAC7205441A1007968FF /* SnapshotHelper.swift in Sources */,
+				EFA563C32497A6EF008CEEED /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +553,7 @@
 				CODE_SIGN_ENTITLEMENTS = Textor/Textor.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = NLX5MF6UHC;
 				INFOPLIST_FILE = "$(SRCROOT)/Textor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -560,12 +561,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vzzoo.Textor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -577,6 +580,7 @@
 				CODE_SIGN_ENTITLEMENTS = Textor/Textor.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = NLX5MF6UHC;
 				INFOPLIST_FILE = "$(SRCROOT)/Textor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -584,11 +588,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vzzoo.Textor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -606,6 +612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.Textor-UI-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Textor;
@@ -615,6 +622,7 @@
 		BED3CAC520544197007968FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NLX5MF6UHC;
 				INFOPLIST_FILE = "Textor UI Tests/Info.plist";
@@ -626,6 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.Textor-UI-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Textor;
